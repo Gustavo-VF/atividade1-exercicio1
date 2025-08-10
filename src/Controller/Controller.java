@@ -3,29 +3,14 @@ package Controller;
 public class Controller {
 	
 	public void concatenaString() {
-		String cadeia = "";
+		 int[] vetor = new int[1000];
 		double Tinicial = System.nanoTime();
 		for(int i = 0; i <1000; i++) {
-			cadeia = cadeia + "A";
+			vetor[i] = 0;
 		}
 		double Tfinal = System.nanoTime();
 		double Ttotal = Tfinal - Tinicial;
-		
-		System.out.println("String ==> "+ Ttotal + "s.");
+		Ttotal = Ttotal / Math.pow(10, 9);
+		System.out.println("Tempo ==> "+ Ttotal + "s.");
 	}
-	
-	public void concatenabuffer() {
-		StringBuffer buffer = new StringBuffer();
-		double Tinicial = System.nanoTime();
-		for(int i = 0; i <1000; i++) {
-			buffer.append("a");
-		}
-		double Tfinal = System.nanoTime();
-		double Ttotal = Tfinal - Tinicial;
-		
-		System.out.println("Buffer ==> "+ Ttotal + "s.");
-			
-		     
-	}
-
 }

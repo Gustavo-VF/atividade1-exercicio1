@@ -6,7 +6,7 @@ public class Principal {
 	Controller op = new Controller();
 	
 	op.concatenaString();
-	op.concatenabuffer();
+	
 	
 		
 	}
