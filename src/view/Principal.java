@@ -5,7 +5,9 @@ public class Principal {
 	
 	Controller op = new Controller();
 	
-	op.concatenaString();
+	op.concatenaString(1000);
+	op.concatenaString(10000);
+	op.concatenaString(100000);
 	
 	
 		
